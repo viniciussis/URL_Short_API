@@ -1,16 +1,17 @@
 import express, { json } from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
+
 const app = express();
 const PORT = process.env.PORT || 3001;
+const APIUrl = 'https://cleanuri.com/api/v1/shorten';
 
 app.use(cors());
 app.use(json());
 
 app.post('/shorten', async (req, res) => {
-  const apiUrl = 'https://cleanuri.com/api/v1/shorten';
   try {
-    const response = await fetch(apiUrl, {
+    const response = await fetch(APIUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -26,5 +27,5 @@ app.post('/shorten', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}...`);
 });
