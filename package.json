@@ -1,0 +1,23 @@
+{
+  "name": "backend-url-short",
+  "version": "1.0.0",
+  "description": "back-end to URL Shortening API Landing Page",
+  "main": "index.jsx",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "API-Rest",
+    "javascript",
+    "API"
+  ],
+  "author": "Vinicius S Santos",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}
